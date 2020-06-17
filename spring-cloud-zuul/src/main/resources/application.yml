@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: spring-cloud-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ensk:123456@localhost:8761/eureka
+zuul:
+  ignoredServices: '*'
+  routes:
+    app-a:
+      path: /u/**
+      serviceId: spring-cloud-provider-user
+

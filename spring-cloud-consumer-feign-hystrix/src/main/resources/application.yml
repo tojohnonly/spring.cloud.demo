@@ -1,0 +1,11 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: spring-cloud-consumer-feign-hystrix
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ensk:123456@localhost:8761/eureka
+

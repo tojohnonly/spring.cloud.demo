@@ -1,0 +1,14 @@
+server:
+  port: 7902
+spring:
+  application:
+    name: spring-cloud-provider-user
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ensk:123456@localhost:8761/eureka
+
+logging:
+  level:
+    root: INFO
